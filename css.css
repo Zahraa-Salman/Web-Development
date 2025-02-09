@@ -1,0 +1,415 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background: linear-gradient(#060A0F,navy);
+  color:white;
+  perspective: 1500px;
+}
+
+.gallery-container {
+  position: relative;
+  width: 500px;
+  height: 500px;
+  transform-style: preserve-3d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 110px;
+}
+
+.gallery {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transform: rotateY(0deg);
+  transition: transform 0.6s ease-in-out;
+}
+
+.card {
+  position: absolute;
+  width: 200px;
+  height: 250px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  font-size: 1.2em;
+  border-radius: 10px;
+  transform-style: preserve-3d;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.7);
+  top: 50%;
+  left: 50%;
+  transition: transform 0.6s, opacity 0.6s;
+}
+
+.card:hover .card-front {
+  transform: rotateY(180deg);
+}
+
+.card:hover .card-back {
+  transform: rotateY(0deg);
+}
+
+.card-front {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  backface-visibility: hidden;
+  background: linear-gradient(135deg, rgb(3, 193, 207), #ad00fd);
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  transition: transform 0.6s;
+  opacity: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; 
+  text-align: left; 
+}
+
+.card-back {
+  width: 100%;
+  height: 100%;
+  background-color: #f1f1f1;
+  color: black;
+  transform: rotateY(180deg);
+  display: flex;
+  transition: transform 0.6s;
+  border-radius: 10px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  backface-visibility: hidden;
+  position: absolute;
+  opacity: 0;
+}
+
+.card:hover .card-front {
+  opacity: 0; 
+}
+
+.card:hover .card-back {
+  opacity: 1;
+}
+
+.card:nth-child(1) {
+  transform: translate(-50%, -50%) rotateY(0deg) translateZ(300px);
+}
+
+.card:nth-child(2) {
+  transform: translate(-50%, -50%) rotateY(36deg) translateZ(300px);
+}
+
+.card:nth-child(3) {
+  transform: translate(-50%, -50%) rotateY(72deg) translateZ(300px);
+}
+
+.card:nth-child(4) {
+  transform: translate(-50%, -50%) rotateY(108deg) translateZ(300px);
+}
+
+.card:nth-child(5) {
+  transform: translate(-50%, -50%) rotateY(144deg) translateZ(300px);
+}
+
+.card:nth-child(6) {
+  transform: translate(-50%, -50%) rotateY(180deg) translateZ(300px);
+}
+
+.card:nth-child(7) {
+  transform: translate(-50%, -50%) rotateY(216deg) translateZ(300px);
+}
+
+.card:nth-child(8) {
+  transform: translate(-50%, -50%) rotateY(252deg) translateZ(300px);
+}
+
+.card:nth-child(9) {
+  transform: translate(-50%, -50%) rotateY(288deg) translateZ(300px);
+}
+
+.card:nth-child(10) {
+  transform: translate(-50%, -50%) rotateY(324deg) translateZ(300px);
+}
+
+.Codes {
+  margin-bottom: 70px;
+  margin-right: 20px;
+  
+}
+
+.description {
+  display: block;
+  text-align: center;
+  margin-bottom: 20px; 
+  font-family: "Jersey 15", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size:25px ;
+  color:rgb(106, 23, 106);
+  text-shadow:2px 2px 5px white;
+}
+.description2 {
+  display: block;
+  text-align: center;
+  margin-bottom: 10px; 
+  font-family: "Jersey 15", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size:25px ;
+  color:rgb(106, 23, 106);
+  text-shadow:2px 2px 5px white;
+}
+.description1 {
+  display: block;
+  text-align: center;
+  margin-bottom: 30px; 
+  font-size:larger;
+  font-family: "Jersey 15", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size:25px ;
+  color:rgb(106, 23, 106);
+  text-shadow:2px 2px 5px white;
+  font-size:30px;
+}
+.card1-back{
+  font-family: cursive;
+  font-size: small;
+  font-weight:700;
+  text-decoration: underline;
+}
+.card2-back{
+  border-style:ridge;
+  border-color: #ad00fd;
+  border-radius: 20px;
+}
+.card3-back{
+  background:linear-gradient(135deg,white,navy) ;
+  width: 100%;
+  height: 100%;
+  color: black;
+  display: flex;
+  transition: transform 0.6s;
+  border-radius: 10px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  backface-visibility: hidden;
+  position: absolute;
+}
+.Codes3{
+  text-align:left;
+  padding-bottom: 40px;
+}
+.description3{
+  display: block;
+  text-align: center;
+  margin-bottom: 20px;
+  color:rgb(106, 23, 106);
+  font-weight:bolder;
+  text-shadow:2px 2px 5px white;
+  font-family: "Jersey 15", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size:25px ;
+  text-shadow:2px 2px 5px white;
+
+}
+.Codes4{
+  font-size:17px ;
+}
+.card4-back{
+  background-image:url(sky.png);
+  background-repeat: no-repeat;
+  background-attachment:fixed;
+  background-position:center;
+  background-size:cover;
+  width: 100%;
+  height: 100%;
+  color: purple;
+  display: flex;
+  transition: transform 0.6s;
+  border-radius: 10px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  backface-visibility: hidden;
+  position: absolute;
+}
+.description5{
+  display: block;
+  text-align: center;
+  margin-bottom: 40px;
+  font-family: "Jersey 15", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size:25px ;
+  color:rgb(106, 23, 106);
+  text-shadow:2px 2px 5px white;
+}
+.Codes5{
+  padding-bottom:80px;
+}
+.card5-back:link{
+  color:black;
+}
+.card5-back:visited{
+  color:rgb(244, 9, 165);
+}
+.card5-back:hover{
+  color:purple;
+}
+.Codes6{
+  padding-bottom:60px;
+
+}
+.description6{
+  display: block;
+  text-align: center;
+  margin-bottom: 30px;
+  font-family: "Jersey 15", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size:25px ;
+  color:rgb(106, 23, 106);
+  text-shadow:2px 2px 5px white;
+}
+.card6-back{
+  color: white;
+  text-shadow:2px 2px 5px purple;
+  border:solid;
+  border-width:30px;
+  border-radius: 20px;
+  box-shadow: 2px 2px 5px #000000;
+}
+.Codes7{
+  padding-bottom:60px;
+
+
+}
+.description7{
+  display: block;
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: larger;
+  font-family: "Jersey 15", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size:25px ;
+  color:rgb(106, 23, 106);
+  text-shadow:2px 2px 5px white;
+}
+.card7-back {
+  display: block;
+  animation: margin 5s ease-in-out;
+  animation-iteration-count:infinite;
+}
+.card8-back{
+  padding: 10px;
+  background-color: #fff;
+  border: 2px solid #122ca0;
+  display: block;
+  animation: padding 5s ease-in-out infinite;
+}
+@keyframes padding{
+  from {
+   padding: 10px;
+  }
+  to {
+   padding: 50px;
+  }
+}
+
+@keyframes margin {
+  from {
+    margin-top: 0;
+  }
+  to {
+    margin-top: 50px;
+  }
+}
+
+@keyframes translate {
+  from {
+    transform: translateY(-100px);
+  }
+  to {
+    transform: translateY(100px);
+  }
+}
+.Codes10{
+  padding-bottom:5px;
+  font-size: smaller;
+}
+.description10{
+  display: block;
+  text-align: center;
+  font-size:25px ;
+  margin-bottom: 0px;
+  font-family: "Jersey 15", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size:25px ;
+  color:rgb(106, 23, 106);
+  text-shadow:2px 2px 5px white;
+
+}
+.intro{
+  position: absolute; 
+  top: 0; 
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  margin-top: 10px; 
+  padding: 15px;
+  text-align: center; 
+  font-size: 30px;
+  font-family: "Lilita One", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.Codes8{
+  padding-bottom:60px;
+
+}
+.description8{
+  display: block;
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: larger;
+  font-family: "Jersey 15", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size:25px ;
+  color:rgb(106, 23, 106);
+  text-shadow:2px 2px 5px white;
+}
+.description9{
+  display: block;
+  text-align: center;
+  margin-bottom: 0px;
+  font-size: larger;
+  font-family: "Jersey 15", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size:25px ;
+  color:rgb(106, 23, 106);
+  text-shadow:2px 2px 5px white;
+}
+.font{
+  font-size:40px;
+  text-shadow:2px 2px 5px purple;
+}
+.card10-back{
+  animation: translate 6s infinite;
+  animation-delay:2s ;
+
+}

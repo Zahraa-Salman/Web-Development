@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Jersey+15&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Rubik+Vinyl&family=Silkscreen:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Jersey+15&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Rubik+Vinyl&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+15&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="home.css">
+    <title>Web Development</title>
+    <link rel="icon" href="DALL·E 2025-02-04 16.15.40 - A modern and minimalist logo for 'Web Roots'. The logo features a stylized tree with its roots forming digital circuits, symbolizing foundational lear.webp" sizes="32x32" type="image/png">
+</head>
+
+<body>
+    <div class="nav">
+        <a class="navs" href="index.html">Home</a>
+        <a class="navs" href="html.html" target="_blank">HTML</a>
+        <a class="navs" href="css.html" target="_blank">CSS</a>
+        <a class="navs" href="js.html" target="_blank">JS</a>
+        <a class="navs" href="quiz.html" target="_blank">QUIZ</a>
+    </div>
+    <div class="container">
+        <div class="left">
+            <h1>Unleash your coding talents and reach new heights with our learning resources.</h1>
+        </div>
+        <div class="image"><img src="IMG-20241230-WA0194.jpg" width="110%" height="110%" alt="Programmer" /></div>
+    </div>
+    <div class="Intro">
+        <p>
+            Unlock the basics of web development with our interactive tutorials:<span class="mint"><br>Click on the
+                HTML,
+                CSS, or JavaScript
+                buttons to start your learning journey.</span></p>
+    </div>
+    <p class="center"> To build a successful website, mastering these three core technologies is essential! </p>
+    <div class="row">
+        <div class="buttonsstyle"><button class="htmlbutton">HTML</button>
+            <p class="description"> <span class="white">H</span>yper<span class="white">T</span>ext <span
+                    class="white">M</span>arkup <span class="white">L</span>anguages</p>
+            <p class="description2">The skeleton defines the structure of the content.</p>
+        </div>
+        <div class="buttonsstyle"><button class="whitecss">CSS</button>
+            <p class="description"><span class="white">C</span>ascading <span class="white">S</span>tyle <span
+                    class="white">S</span>heets</p>
+            <p class="description2">The skin determines the style and the layout.</p>
+        </div>
+    </div>
+    <div class="buttons"><button class="whitejs">JS</button>
+        <p class="description"><span class="white">J</span>ava<span class="white">S</span>cript</p>
+        <p class="description2">The Brain makes the content interactive.</p>
+    </div>
+    <h2>Put your new skills to the test and see how much you've learned!</h2>
+    <div class="circle-container">
+        <a href="quiz.html" class="circle-link">
+            <p class="translate">Quiz Zone</p>
+            <div class="orbit-circle"><span class="goodluck">GoodLuck</span>
+                <div class="orbit-object">
+                    <span class="ripple"></span>
+                </div>
+            </div>
+        </a>
+    </div>
+    <footer> 
+         <h2>Now it's the time to apply your acquired knowledge into action and start practicing </h2><br>
+        Resources:<br>
+           <a class="link-color" href="https://www.w3schools.com/html/html_editor.asp" target="_blank">W3shools</a> 
+           &nbsp;&nbsp;&nbsp;
+            
+            <a class="link-color" href="https://www.freecodecamp.org/learn/2022/responsive-web-design/"
+                    target="_blank">freeCodeCamp</a><br>
+            <a class="link-color" href="https://www.codechef.com/practice/html" target="_blank">CodeChef</a>
+            &nbsp;&nbsp;&nbsp;
+            <a class="link-color" href="https://flexboxfroggy.com/" target="_blank">Flexbox Froggy</a><br>
+            <a class="link-color" href="https://cssbattle.dev/" target="_blank">CSS Battle</a>
+           <div class="finalimg"> <img src="DALL·E 2025-02-04 16.15.40 - A modern and minimalist logo for 'Web Roots'. The logo features a stylized tree with its roots forming digital circuits, symbolizing foundational lear.webp" height="200px" width="200px">
+           </div>
+           <p> &copy; 2025 Web Roots. All rights reserved.</p>
+    </footer>
+    <script>
+        // Get all elements with the class name "whitecss"
+        var elements = document.getElementsByClassName("whitecss");
+
+        // Iterate through the elements and add the onclick event listener
+        for (var i = 0; i < elements.length; i++) {
+            elements[i].onclick = function () {
+                if (typeof location !== 'undefined') {
+                    location.href = "css.html";
+                } else {
+                    console.error("location is not defined");
+                }
+            };
+        }
+         // Get all elements with the class name "whitecss"
+         var elements = document.getElementsByClassName("htmlbutton");
+
+// Iterate through the elements and add the onclick event listener
+for (var i = 0; i < elements.length; i++) {
+    elements[i].onclick = function () {
+        if (typeof location !== 'undefined') {
+            location.href = "html.html";
+        } else {
+            console.error("location is not defined");
+        }
+    };
+}
+ // Get all elements with the class name "whitecss"
+ var elements = document.getElementsByClassName("whitejs");
+
+// Iterate through the elements and add the onclick event listener
+for (var i = 0; i < elements.length; i++) {
+    elements[i].onclick = function () {
+        if (typeof location !== 'undefined') {
+            location.href = "js.html";
+        } else {
+            console.error("location is not defined");
+        }
+    };
+}
+
+    </script>
+  
+
+</body>
+
+</html>
